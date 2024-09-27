@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavBar.Master.cs" Inherits="PSD_LabProject_GymMe.Views.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="LogoLb" runat="server" Text="GymMe"></asp:Label>
+            <asp:Button ID="HomeBtn" runat="server" Text="Home" OnClick="HomeBtn_Click" />
+            <asp:Button ID="LogoutBtn" runat="server" Text="Log Out" OnClick="LogoutBtn_Click" />
+            <asp:Button ID="LoginBtn" runat="server" Text="Log In" OnClick="LoginBtn_Click"/>
+            <asp:Button ID="RegisterBtn" runat="server" Text="Register" OnClick="RegisterBtn_Click" />
+            <asp:Button ID="TransactionBtn" runat="server" Text="Transaction Report" OnClick="TransactionBtn_Click" />
+            <asp:Button ID="OrderBtn" runat="server" Text="Order Supplement" OnClick="OrderBtn_Click"/>
+            <asp:Button ID="HistoryBtn" runat="server" Text="Transaction History"  OnClick="HistoryBtn_Click"/>
+            <asp:Button ID="ProfileBtn" runat="server" Text="Profile" OnClick="ProfileBtn_Click"/>
+            <asp:Button ID="ManageSupplementBtn" runat="server" Text="Manage Supplement" OnClick="ManageSupplementBtn_Click"/>
+            <asp:Button ID="TransactionQueueBtn" runat="server" Text="Transaction Queue" OnClick="TransactionQueueBtn_Click" />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

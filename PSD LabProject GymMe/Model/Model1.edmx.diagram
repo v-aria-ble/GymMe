@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="508e96e0034a49389827c06e5fb2e5f4" Name="Diagram1" ZoomLevel="111">
+        <EntityTypeShape EntityType="LocalDatabaseModel.MsCart" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.MsSupplement" Width="1.5" PointX="2.375" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.MsSupplementType" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.MsUser" Width="1.5" PointX="5.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.TransactionHeader" Width="1.5" PointX="1.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDatabaseModel.TransactionDetail" Width="1.5" PointX="1.875" PointY="3.375" IsExpanded="true" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_MsCarts_ToMsSupplements" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_MsCarts_ToMsUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_MsSupplements_ToMsSupplementType" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_TransactionDetails_ToMsSupplements" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_TransactionHeaders_ToMsUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDatabaseModel.FK_TransactionDetails_ToTransactionHeader" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
